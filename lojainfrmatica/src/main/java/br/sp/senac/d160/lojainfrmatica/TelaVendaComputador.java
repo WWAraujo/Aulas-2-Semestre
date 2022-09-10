@@ -395,7 +395,7 @@ public class TelaVendaComputador extends javax.swing.JFrame {
             modelo.removeRow(indiceLinha);
             
         }else{
-            JOptionPane.showMessageDialog(this, "Selecione uma linha");
+            JOptionPane.showMessageDialog(this, "Selecione um item");
             
         }
     }//GEN-LAST:event_btnRemoverActionPerformed
