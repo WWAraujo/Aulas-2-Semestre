@@ -32,7 +32,7 @@ public class ArquivosObjetos {
     }
 
     public static void main(String[] args) {
-        
+    /*    
         Pessoa pessoa = new Pessoa();
         pessoa.setNome("João da Silva");
         pessoa.setIdade(24);
@@ -57,6 +57,6 @@ public class ArquivosObjetos {
         System.out.println(aluno.getIdade());
         System.out.println(aluno.getAltura());
         System.out.println(aluno.getPeso());
+*/
     }
-    
 }
