@@ -17,36 +17,30 @@ import java.util.UUID;
 public class Calculadora {
     
     public static void main(String[] args) throws Exception{
-        
+     
         double resposta = 0; 
         double x = primeiroValor();
         double y = segundoValor();
         String operador = qualOperacao();
         
         switch (operador) {
-            case ("+"):
-                resposta = Soma(x,y);
-                break;
+            case ("+") -> resposta = Soma(x,y);
             
-            case ("-"):
-                resposta = Subtracao(x,y);
-                break;
+            case ("-") -> resposta = Subtracao(x,y);
                 
-               case ("/"):
-                resposta = Divisao(x,y);
-                break;
+            case ("/") -> resposta = Divisao(x,y);
             
-            case ("*"):
-                resposta = Multiplicacao(x,y);
-                break; 
+            case ("*") -> resposta = Multiplicacao(x,y); 
         
-            default:
-            System.out.println("Digite um operador valido ex: + ou - ou * ou /");
-            operador = qualOperacao();
+            default -> {
+                System.out.println("Digite um operador valido ex: + ou - ou * ou /");
+                
+            }
         }
         
         String gravar = (x+" " + operador + " " + y + " = " + resposta);
         criarArquivo (gravar);
+        
     }
     
     public static double primeiroValor (){
