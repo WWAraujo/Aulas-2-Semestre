@@ -32,31 +32,32 @@ public class ArquivosObjetos {
     }
 
     public static void main(String[] args) {
-    /*    
-        Pessoa pessoa = new Pessoa();
-        pessoa.setNome("João da Silva");
-        pessoa.setIdade(24);
-        pessoa.setAltura(1.75);
-        pessoa.setPeso(60.0);
+        
+        Aluno aluno = new Aluno();
+        aluno.setNome("João da Silva");
+        aluno.setCurso("ADS");
+        aluno.setSerie(1);
+        aluno.setValor(590.90);
+        aluno.setPeriodo("Noturno");
 
         ArquivosObjetos arquivosObjetos = new ArquivosObjetos();
         try {
-            arquivosObjetos.criarObjeto(pessoa);
+            arquivosObjetos.criarObjeto(aluno);
         } catch (Exception ex) {
             ex.printStackTrace(System.out);
         }
 
-        Pessoa aluno = null;
+        Aluno aluno2 = null;
         try {
-            aluno = (Pessoa) arquivosObjetos.lerObjeto();
+            aluno2 = (Aluno) arquivosObjetos.lerObjeto();
         } catch (Exception e) {
             e.printStackTrace(System.out);
         }
 
         System.out.println(aluno.getNome());
-        System.out.println(aluno.getIdade());
-        System.out.println(aluno.getAltura());
-        System.out.println(aluno.getPeso());
-*/
+        System.out.println(aluno.getCurso());
+        System.out.println(aluno.getSerie());
+        System.out.println(aluno.getValor());
+        System.out.println(aluno.getPeriodo());
     }
 }
